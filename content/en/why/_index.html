@@ -1,0 +1,126 @@
+---
+title: Why UK GEMINI
+linkTitle: Why UK GEMINI
+menu:
+  main:
+    weight: 11
+
+---
+
+
+{{< blocks/cover title="Why UK GEMINI?" image_anchor="bottom" height="min" >}}
+
+<p class="lead mt-5">Why not just have the INSPIRE Technical Guidance?
+</p>
+
+{{< /blocks/cover >}}
+
+{{% blocks/lead %}}
+At the recent INSPIRE Conference, I was challenged as to why we in UK had developed separate documentation known as UK GEMINI 2.3 in parallel with the INSPIRE Technical Guidance – why not just adopt the INSPIRE Technical Guidance? It’s a good question; here are some answers that I can think of – I’ll leave it to you to say whether you think they’re sufficient!
+{{% /blocks/lead %}}
+
+
+{{< blocks/section >}}
+<div class="col-12">
+<h1 class="text-center">Background</h1>
+</div>
+<p>“UK GEMINI” is the UK geographic metadata standard. Or perhaps profile – in that it’s a subset of the family of ISO standards clustered around ISO 19115:2003<a href="#_ftn1" name="_ftnref1"><sup>[1]</sup></a>. Or perhaps it’s guidance on how to publish geographic metadata in the UK, in the context of INSPIRE and particularly the UK national implementation of INSPIRE. In reality, it’s all those things.</p>
+<p>GEMINI was originally published in 2004, as an evolution of the GI Gateway metadata standard to take into account the then new UK eGovernment Metadata Standard. It was updated in 2009 to version 2, to come in line with the INSPIRE Metadata Regulation, which had been published in 2007, and had adopted ISO 19115:2005 and ISO 19119:2005; that was the biggest change – introducing metadata to describe web services. GEMINI 2.1 and 2.2 kept track with changes in the INSPIRE guidelines, and meanwhile, Defra’s UK Location programme published an independent set of guidance, including how to encode GEMINI in XML (ISO 19139).</p>
+<p>In June 2018, AGI published GEMINI 2.3, updating GEMINI 2.2, partly to bring it up to date with the INSPIRE “Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007” (2.0.1) – aka the INSPIRE Technical Guidance. GEMINI 2.3 brings together three AGI documents (GEMINI 2.2 as amended, and two of the three separate guidance documents) and three UK Location (Defra) documents – a national INSPIRE profile of GEMINI, encoding guidance, and a document about errors).</p>
+<p>I led that update, as chair of AGI’s Standards Committee.</p>
+<p> For a background to INSPIRE, see <u><a href="http://inspire.ec.europa.eu/">http://inspire.ec.europa.eu/</a></u>, especially <u><a href="http://inspire.ec.europa.eu/about-inspire/563">http://inspire.ec.europa.eu/about-inspire/563</a></u>.</p>
+<p>For UK GEMINI, see <u><a href="/agi-groups/standards-committee/uk-gemini">https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini</a></u>.</p>
+
+{{< /blocks/section >}}
+
+
+
+{{< blocks/section >}}
+
+<div class="col-12">
+<h1 class="text-center">Reasoning</h1>
+</div>
+<p><strong>Simplification </strong></p>
+<p>The INSPIRE Technical Guidance is 178 pages (in PDF form), although to be fair it’s only 86 pages of actual guidance (plus the easily overlooked three page Annex C.7 which summarises other metadata elements that are specified in particular theme guidance!).</p>
+<p>We believe we’ve made that easier for various audiences to use: those creating metadata (for datasets, with a separate view/entry point to GEMINI for services), those creating metadata tools, and those validating metadata instances.</p>
+<p><strong>Reducing implementation choices</strong></p>
+<p>Leaving aside that INSPIRE Technical Guidance is just that – it’s not binding – the INSPIRE TG still contains a number of choices. We believe we have made metadata creators’ jobs easier by reducing those choices – either with an instruction, or (more often) with a ‘heavy hint’.</p>
+<p>Examples:</p>
+<p><em>This one is ‘so trivial as to be hardly worth stating’, in a UK context: </em>Metadata language &amp; Resource language: for INSPIRE, these can be any of the official languages of the EU. We point out which are the two in formal use in the UK, and recommend (strongly!) that the metadata be in English.</p>
+<p><strong>Making explicit some things that are hidden</strong></p>
+<p>Some things are rather hidden in the INSPIRE TG, perhaps appearing in examples, or as subordinate paragraphs in other requirements. We make these explicit.</p>
+<p>Examples</p>
+<ul>
+<li>Hierarchy level name. Because INSPIRE (reasonably) uses the ISO 19115 quality metadata, some records require a ‘hierarchy level name’. This is a subordinate clause of the INSPIRE service metadata resource type, but in practice also applies to ‘series’ metadata.</li>
+<li>Spatial reference system. This is not named in INSPIRE, but is a requirement (metadata/2.0/req/isdss/crs)</li>
+<li>Topic category. INSPIRE rightly refers to the ISO 19115 code list – the reader is left to find out for themselves what values this allows. We have brought the list into GEMINI, with the intention of making the guidance easier to use.</li>
+<li>Data quality: we’ve brought together into GEMINI the recommendations that are scattered across the theme Data Specifications in INSPIRE.</li>
+</ul>
+<p><strong>Closer alignment with the ISO standards</strong></p>
+<p>Sometimes GEMINI just “change the name” of the element – usually to that used by ISO. This makes it easier for communities already using the ISO metadata standards to see how to bring their metadata across to INSPIRE.</p>
+<p>In the case of “Resource identifier”, we had found that the INSPIRE/ISO name “Unique resource identifier” confused people for two reasons:</p>
+<ul>
+<li>You can have more than one, so in that sense, it’s not “unique”</li>
+<li>Many people muddled it up with the W3C concept “Universal resource identifier” (URI)</li>
+</ul>
+{{< /blocks/section >}}
+
+{{< blocks/section >}}
+
+<div class="col-12">
+<h1 class="text-center">UK specific things: data.gov.uk</h1>
+<p>Some extra things are required just to make the metadata work in the infrastructure, including with <u><a href="http://data.gov.uk">data.gov.uk</a></u>. Others are useful to make it work better in that environment.</p>
+<p>Examples:</p>
+<ul>
+<li>File identifier: INSPIRE doesn’t actually require “fileIdentifier”, although the Technical Guidance does recommend it. We require it for data.gov.uk – and I suspect all other metadata processing systems do too.</li>
+</ul>
+<p>Previous versions of GEMINI added the function, name, and description sub elements to Resource locator. But INSPIRE has now included these as recommendations. GEMINI just describes how they get displayed in data.gov.uk.</p>
+</div>
+
+{{< /blocks/section >}}
+
+{{< blocks/section >}}
+
+<div class="col-12">
+<h1 class="text-center">UK specific things: code and term lists</h1>
+<p>For some elements, we mention UK specific lists that could be used. For example:</p>
+<ul>
+<li>Keyword: we mention the Integrated Public Sector Vocabulary (although some Local Authorities have suggested that this is no longer useful, let alone required).</li>
+</ul>
+</div>
+
+{{< /blocks/section >}}
+
+{{< blocks/section >}}
+
+<div class="col-12">
+<h1 class="text-center">Community requests</h1>
+<p>We included some things at the request of user communities in the UK. For example</p>
+<ul>
+<li>Parent identifier. MEDIN and others find this useful for relating dataset metadata records that are part of a series to the series record. This one is new in GEMINI 2.3.</li>
+<li>Alternative title: experience of using GEMINI suggests that some resources are known by more than one title. So to increase the chances of human users finding them in searches, GEMINI includes an explicit element for these.</li>
+<li>Extent (as a word / reference to controlled list): again to aid searching, GEMINI has always encouraged that metadata indicates the geographic extent that the data (or service) covers by means of a word (preferably from a controlled list).</li>
+<li>Vertical extent information: the marine science &amp; navigation domains, and the atmospheric scientists are all interested to make it explicit what the vertical extent of their data is, and ISO provide for that, so GEMINI has included it for some time.</li>
+</ul>
+</div>
+
+{{< /blocks/section >}}
+
+{{< blocks/section >}}
+
+<div class="col-12">
+<h1 class="text-center">Conslusion</h1>
+<p>The aim is to make UK geographic metadata more consistent and better quality.</p>
+<p>There are several kinds of ‘extras’ in GEMINI:</p>
+<ul>
+<li>Restriction by guidance</li>
+<li>Extension on request</li>
+<li>Extension for infrastructure</li>
+</ul>
+<p>All these restrictions and extensions are still within the scope of the underlying ISO standards, and are known to work in the INSPIRE infrastructure. None of the actual extensions beyond INSPIRE (allowing for INSPIRE’s hidden requirements!) is mandatory.</p>
+<p>The other changes just aim to bring information together into one place, for ease of use.</p>
+<p><sup>[1]</sup> ISO 19115:2003 itself, ISO 19119:2005 (service metadata), ISO 19139:2007 (XML encoding), and the never-published ISO 19119 extension to ISO 19139. NOT TO BE CONFUSED with their replacements: ISO 19115-1:2014 and ISO 19115-3:2016. <em>Perhaps this footnote answers ‘why?’!</em></p>	
+  
+</div>
+
+{{< /blocks/section >}}
