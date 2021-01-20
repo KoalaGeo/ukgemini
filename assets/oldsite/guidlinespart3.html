@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="/templates/agi/css/bootstrap.min.css?v=1" type="text/css" />
+	<link rel="stylesheet" href="/templates/agi/css/bootstrap-theme.min.css?v=1" type="text/css" />
+<base href="https://www.agi.org.uk/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Mrs. Sally Hunter" />
+	<meta name="generator" content="AGI" />
+	<title>Metadata Guidelines for Geospatial Data Resources - Part 3</title>
+	<link href="/templates/agi/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/plugins/system/cookiemonster/assets/css/cookiemonster.css" rel="stylesheet" type="text/css" />
+	<script src="/media/jui/js/jquery-migrate.min.js?13b87e88f562838f01d0e94a834981ab" type="text/javascript"></script>
+	<script src="/plugins/system/cookiemonster/assets/js/cookiemonster.js" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?13b87e88f562838f01d0e94a834981ab" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?13b87e88f562838f01d0e94a834981ab" type="text/javascript"></script>
+	<script type="text/javascript">
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+	<link rel="stylesheet" href="/templates/agi/css/template.css?v=11" type="text/css" />
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-42148706-1', 'agi.org.uk');
+  ga('send', 'pageview');
+</script></head>
+<body class="body264  article9 guest">
+	
+	<header>
+		<div class="container stripe">
+			<div class="header">
+				<button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="row">
+					<div class="col-sm-3 logo">
+						<a href="https://www.agi.org.uk/"><img src="/templates/agi/images/logo.png" alt="AGI" /></a>
+					</div>
+					<div class="col-sm-9">
+						<div class="info">
+							<span>For Membership &amp; Sponsorship Enquiries</span>
+							<strong>+44 (0)1489 668 340</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="collapse navbar-collapse" role="navigation">
+				<ul class="nav menu main nav-pills">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-108 deeper parent"><a href="/about/mission-and-role" >About the AGI</a><ul class="dropdown-menu"><li class="item-113"><a href="/about/mission-and-role" >Mission &amp; Role</a></li><li class="item-114 deeper parent"><a href="/about/council" >Council</a><ul class="dropdown-menu"><li class="item-119"><a href="/about/council/members" >Council Members</a></li><li class="item-120"><a href="/about/council/meeting-minutes" >Council Meetings</a></li><li class="item-121"><a href="/about/council/executive-group" >Executive Group</a></li></ul></li><li class="item-115"><a href="/about/agi-team" >AGI Team</a></li><li class="item-116"><a href="/about/press-media" >Press and Media</a></li><li class="item-117"><a href="/about/our-sponsors" >Our Partners</a></li><li class="item-118"><a href="/about/our-network" >Our Network</a></li><li class="item-258"><a href="/about/contact-us" >Contact Us</a></li><li class="item-127"><a href="/about/resources" >Resources</a></li></ul></li><li class="item-140 active deeper parent"><a href="/agi-groups" >AGI Groups</a><ul class="dropdown-menu"><li class="item-145 deeper parent"><a href="/agi-groups/national-groups" >National Groups</a><ul class="dropdown-menu"><li class="item-150 parent"><a href="/agi-groups/national-groups/agi-cymru" >AGI Cymru</a></li><li class="item-151 parent"><a href="/agi-groups/national-groups/agi-northern-ireland" >AGI Northern Ireland</a></li><li class="item-152 parent"><a href="/agi-groups/national-groups/agi-scotland" >AGI Scotland</a></li></ul></li><li class="item-147 deeper parent"><a href="/agi-groups/special-interest-groups" >Special Interest Groups</a><ul class="dropdown-menu"><li class="item-285 parent"><a href="/agi-groups/special-interest-groups/early-careers-network" >Early Careers Network</a></li></ul></li><li class="item-148 active deeper parent"><a href="/agi-groups/standards-committee" >Standards Committee</a><ul class="dropdown-menu"><li class="item-186"><a href="/agi-groups/standards-committee/the-importance-of-standards" >The Importance of Standards</a></li><li class="item-262"><a href="/agi-groups/standards-committee/standards-resources" >Standards Resources</a></li><li class="item-264 current active parent"><a href="/agi-groups/standards-committee/uk-gemini" >UK GEMINI</a></li><li class="item-303"><a href="/agi-groups/standards-committee/bs7666-guidelines" >BS 7666 Guidelines</a></li><li class="item-305"><a href="/agi-groups/standards-committee/review-of-bs-7666" >Review of BS 7666</a></li><li class="item-357"><a href="/agi-groups/standards-committee/why-uk-gemini-why-not-just-have-the-inspire-technical-guidance" >Why UK GEMINI? Why not just have the INSPIRE Technical Guidance?</a></li></ul></li><li class="item-149 deeper parent"><a href="/agi-groups/action-working-groups" >Action Working Groups</a><ul class="dropdown-menu"><li class="item-188"><a href="/agi-groups/action-working-groups/events-awg" >Events AWG</a></li></ul></li></ul></li><li class="item-109 deeper parent"><a href="/news/agi" >News &amp; Insights</a><ul class="dropdown-menu"><li class="item-122"><a href="/news/agi" >AGI News</a></li><li class="item-123"><a href="/news/interest" >Interest News</a></li><li class="item-124"><a href="/news/industry" >Industry News</a></li><li class="item-125"><a href="/news/insights" >Insights</a></li><li class="item-128"><a href="/news/find-a-job" >Find a Job</a></li><li class="item-212"><a href="/news/interests" >Interests</a></li><li class="item-213"><a href="/news/dates" >Dates</a></li><li class="item-126"><a href="/news/foresight-report" >Foresight Report</a></li><li class="item-359"><a href="/news/case-studies" >Case Studies</a></li></ul></li><li class="item-110 deeper parent"><a href="/events/calendar" >Events</a><ul class="dropdown-menu"><li class="item-238 deeper parent"><a href="/events/calendar" >Upcoming Events</a><ul class="dropdown-menu"><li class="item-257"><a href="/events/calendar/events-booking-conditions" >Event Booking Conditions</a></li></ul></li><li class="item-242"><a href="/events/past" >Past Events</a></li><li class="item-133"><a href="/events/education-and-outreach" >Education and Outreach</a></li><li class="item-134 deeper parent"><a href="/events/exhibiting" >Exhibiting</a><ul class="dropdown-menu"><li class="item-364"><a href="/events/exhibiting/exhibitor-and-sponsor-terms-conditions-for-the-association-for-geographic-information-agi-virtual-events" >AGI Virtual Events Terms &amp; Conditions</a></li><li class="item-255"><a href="/events/exhibiting/events" >Terms and Conditions</a></li></ul></li></ul></li><li class="item-112 deeper parent"><a href="/join-us/join-now" >Join Us</a><ul class="dropdown-menu"><li class="item-135 deeper parent"><a href="/join-us/join-now" >Join Now</a><ul class="dropdown-menu"><li class="item-106"><a href="https://www.agi.org.uk/join-us/join-now/individual-membership-signup" >Individual Membership Signup</a></li><li class="item-195"><a href="https://www.agi.org.uk/join-us/join-now/corporate-membership-signup" >Corporate Membership Signup</a></li><li class="item-196"><a href="https://www.agi.org.uk/join-us/join-now/partner-membership-signup" >Partner Membership Signup</a></li><li class="item-141"><a href="/join-us/join-now/code-of-conduct" >Code of Conduct</a></li></ul></li><li class="item-136 deeper parent"><a href="/join-us/member-benefits" >Member Benefits</a><ul class="dropdown-menu"><li class="item-251"><a href="/join-us/member-benefits/individual-membership" >Individual Membership</a></li><li class="item-252"><a href="/join-us/member-benefits/corporate-membership" >Corporate Membership</a></li></ul></li><li class="item-260"><a href="/join-us/continuing-your-professional-development-and-the-agi" >Continual Professional Development</a></li></ul></li><li class="item-197"><a href="/login" >Login</a></li></ul>
+
+			</nav>
+		</div>
+	
+				<div class="container teaser">
+	<img src="/images/teasers/delegatesgeocom.jpg" alt="" class="bg" />
+	</div>
+		
+			</header>
+	
+	<section class="body">
+		<div class="container">
+			<div id="system-message-container">
+	</div>
+
+						
+			
+			
+			<div class="row content">
+								<div class="content col-lg-9 col-md-9 col-sm-12">
+										<div class="item-page">
+		
+		<div class="page-header">
+	
+		
+					<h1>Metadata Guidelines for Geospatial Data Resources - Part 3</h1>
+				
+							</div>
+	
+		
+	
+	
+		
+							
+	<p>Return to <a title="GEMINI 2.3 home page" href="/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI 2.3 home page</a></p>
+<table class="table table-striped table-hover">
+<tbody>
+<tr>
+<th>Reference Number</th>
+<th>Author, Title, Version, Date of publication</th>
+</tr>
+<tr>
+<td> 1</td>
+<td>AGI, “<a title="Metadata Guidelines for Geospatial Data Resources – Part 1, Introduction" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1" target="_blank" rel="alternate noopener noreferrer">Metadata Guidelines for Geospatial Data Resources – Part 1, Introduction</a>”, September 2010</td>
+</tr>
+<tr>
+<td> 2</td>
+<td>AGI, “<a title="Metadata Guidelines for Geospatial Data Resources - Part 2, Creating metadata using UK GEMINI2 (v2.1)" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2" target="_blank" rel="alternate noopener noreferrer">Metadata Guidelines for Geospatial Data Resources - Part 2, Creating metadata using UK GEMINI2 (v2.1)</a>”, April 2015</td>
+</tr>
+<tr>
+<td> 3</td>
+<td>AGI, "<a href="/about/resources/category/81-gemini?download=100:metadata-guidelines-part-3-april-2015">Metadata Guidelines for Geospatial Data Resources in the UK Part 3 – Metadata quality</a>" , April 2015</td>
+</tr>
+<tr>
+<td> 4</td>
+<td>AGI, “<a title="UK GEMINI, Specification for discovery metadata for geospatial data resources, v2.2" href="/about/resources/category/81-gemini?download=18:gemini-2-2" target="_blank" rel="alternate noopener noreferrer">UK GEMINI, Specification for discovery metadata for geospatial data resources, v2.2</a>”, December 2012, <a href="http://www.agi.org.uk/uk-gemini/">http://www.agi.org.uk/uk-gemini/</a></td>
+</tr>
+<tr>
+<td> 5</td>
+<td>Canonical XML, Version 1.1, 2008-05-02, W3C <a href="http://www.w3.org/TR/xml-c14n">http://www.w3.org/TR/xml-c14n</a></td>
+</tr>
+<tr>
+<td> 6</td>
+<td>EC “Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services” <a title="https://inspire.ec.europa.eu/network-services/" href="https://inspire.ec.europa.eu/network-services/" target="_blank" rel="alternate noopener noreferrer">https://inspire.ec.europa.eu/network-services/</a></td>
+</tr>
+<tr>
+<td> 7</td>
+<td>EC, “Commission Regulation (EC) No. 1205/2008 of 3 December 2008 Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata”, December 2008. Accessed through <a title="http://inspire.ec.europa.eu/metadata" href="http://inspire.ec.europa.eu/metadata" target="_blank" rel="alternate noopener noreferrer">http://inspire.ec.europa.eu/metadata</a> </td>
+</tr>
+<tr>
+<td> 8</td>
+<td>EC, “Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)” 14.03.2007. Accessed through <a title="http://inspire.ec.europa.eu/inspire-legislation/26" href="http://inspire.ec.europa.eu/inspire-legislation/" target="_blank" rel="alternate noopener noreferrer">http://inspire.ec.europa.eu/inspire-legislation/</a></td>
+</tr>
+<tr>
+<td> 9</td>
+<td>EC, “Technical Guidance for implementing dataset and service metadata based on ISO/TS 19139:2007”, (Version 2.0.1)  2017-03-02, INSPIRE Maintenance and Implementation Group (MIG) <a title="http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0" href="http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0" target="_blank" rel="alternate noopener noreferrer">http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>e-Government Metadata Standard (e-GMS). Cabinet Office e-Government Unit. (see <a title="http://www.gov.uk/government/organisations/cabinet-office" href="http://www.gov.uk/government/organisations/cabinet-office" target="_blank" rel="alternate noopener noreferrer">http://www.gov.uk/government/organisations/cabinet-office</a>)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Elliotte Rusty Harold and W. Scott Means, "XML in a Nutshell, Second Edition", June 2002</td>
+</tr>
+<tr>
+<td>12</td>
+<td>EPSG Geodetic Parameter Registry, Version 7.5.6, <a href="http://www.epsg-registry.org/">http://www.epsg-registry.org/</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Federal Geographic Data Committee "Content Standard for Digital Geospatial Metadata" Version 2 - 1998. (see <a href="http://www.fgdc.gov/standards/standards_publications">www.fgdc.gov/standards/standards_publications</a>)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>INSPIRE  Metadata Regulation 03.12.2008 (see <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008R1205:EN:NOT">http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008R1205:EN:NOT</a>)</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Integrated Public Sector Vocabulary (IPSV) from the esd-toolkit, at <a title="IPSV" href="http://id.esd.org.uk/list/subjects">http://id.esd.org.uk/list/subjects</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td>EC, "Technical Guidance for the implementation of INSPIRE View Services", Version 3.11, 2013-04-04 <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td>ISO 15836: 2003 Dublin Core metadata element set</td>
+</tr>
+<tr>
+<td>18</td>
+<td>ISO 19115:2003 Geographic information – Metadata, published by ISO (and national standards bodies)</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ISO 19139:2007 Geographic information – Metadata – XML schema implementation – published by ISO (and national standards bodies)</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ISO 8402:1994 Quality management and quality assurance - Vocabulary</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a title="ISO 8601" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a>:2004 Data elements and interchange formats – Information interchange – Representation of dates and times.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Ordnance Survey Linked Data, <a href="https://data.os.uk/">https://data.os.uk/</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td>UK GEMINI2 Standard Version 2.1.AGI August 2010.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>UK Location, "<a title="Discovery Metadata Service, Operational Guide" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1054-operational-guide" target="_blank" rel="alternate noopener noreferrer">Discovery Metadata Service, Operational Guide</a>", Edition 2-2, February 2013</td>
+</tr>
+<tr>
+<td>25</td>
+<td>UK Location, “<a title="Coordinate Reference Systems for UK Location" href="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwj6usbW17TZAhXKKewKHQYDD_gQFghIMAI&amp;url=https%3A%2F%2Fdata.gov.uk%2Fsites%2Fdefault%2Ffiles%2FCoordinate%2520Reference%2520Systems%2520for%2520UK%2520Location%2520-%2520INSPIRE%2520View%2520Service%2520v1.1_10.pdf&amp;usg=AOvVaw1j3l9XLXLzK6RcuOLDNVPa">Coordinate Reference Systems for UK Location</a>”, v1.1, December 2012</td>
+</tr>
+<tr>
+<td>26</td>
+<td>UK Location, “Discovery Metadata Service Collection Interface Specification”, Versions 2.2, Feb 2013 <a title="DMS_Collection_Interface_Specification.pdf" href="https://data.gov.uk/sites/default/files/DMS%20Operational%20Guide%202-2_10.pdf" target="_blank" rel="alternate noopener noreferrer">https://data.gov.uk/sites/default/files/DMS%20Operational%20Guide%202-2_10.pdf</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td>UK Location, Getting started - series of guides, <a title="https://data.gov.uk/location/guidance_and_tools" href="https://data.gov.uk/location/guidance_and_tools" target="_blank" rel="alternate noopener noreferrer">https://data.gov.uk/location/guidance_and_tools</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td>UK Location, “<a title="UK GEMINI Encoding Guidance, Version 1.4" href="https://data.gov.uk/sites/default/files/UK%20GEMINI%20Encoding%20Guidance%201.4_10.pdf" target="_blank" rel="alternate noopener noreferrer">UK GEMINI Encoding Guidance, Version 1.4</a>”, February 2013</td>
+</tr>
+<tr>
+<td>29</td>
+<td>UK Location, “UK GEMINI Schematron Schema Guidance”, Version 1.3, January 2013 <a title="data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance" href="http://data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance" target="_blank" rel="alternate noopener noreferrer">http://data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td>UK Location, “UK GEMINI Schematron Schema”, Version 1.3, January 2013</td>
+</tr>
+<tr>
+<td>31</td>
+<td>User Guide: Administrators and Editors, version 1.5, data.gov.uk</td>
+</tr>
+</tbody>
+</table>
+<p><em>Last updated: February 2018</em></p>
+<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"> <img style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence" /> </a> <br />This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a></p> 	
+	
+	
+		
+		
+	</div>
+
+									</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 sidebar">
+							<div class="module submenuver">
+		<div>
+							<h3>Main Submenu</h3>
+							<ul class="nav menu">
+<li class="item-145 deeper parent"><a href="/agi-groups/national-groups" >National Groups</a><ul><li class="item-150 deeper parent"><a href="/agi-groups/national-groups/agi-cymru" >AGI Cymru</a><ul><li class="item-153"><a href="/agi-groups/national-groups/agi-cymru/agi-cymru-committee" >AGI Cymru Committee</a></li><li class="item-365"><a href="/agi-groups/national-groups/agi-cymru/agi-geocymru-blogs" >AGI Cymru Blog</a></li></ul></li><li class="item-151 deeper parent"><a href="/agi-groups/national-groups/agi-northern-ireland" >AGI Northern Ireland</a><ul><li class="item-154"><a href="/agi-groups/national-groups/agi-northern-ireland/agi-northern-ireland-committee" >AGI Northern Ireland Committee</a></li><li class="item-368"><a href="/agi-groups/national-groups/agi-northern-ireland/agi-northern-ireland-blog" >AGI Northern Ireland Blog</a></li></ul></li><li class="item-152 deeper parent"><a href="/agi-groups/national-groups/agi-scotland" >AGI Scotland</a><ul><li class="item-158"><a href="/agi-groups/national-groups/agi-scotland/agi-scotland-committee" >AGI Scotland Committee</a></li><li class="item-302"><a href="/agi-groups/national-groups/agi-scotland/agi-scotland-blog" >AGI Scotland Blog</a></li><li class="item-366"><a href="/agi-groups/national-groups/agi-scotland/edinburgh-earth-observatory-eeo-seminars" >Edinburgh Earth Observatory (EEO) Seminars</a></li></ul></li></ul></li><li class="item-147 deeper parent"><a href="/agi-groups/special-interest-groups" >Special Interest Groups</a><ul><li class="item-285 deeper parent"><a href="/agi-groups/special-interest-groups/early-careers-network" >Early Careers Network</a><ul><li class="item-271"><a href="/agi-groups/special-interest-groups/early-careers-network/ecn-blog" >Early Careers Network Blog</a></li></ul></li></ul></li><li class="item-148 active deeper parent"><a href="/agi-groups/standards-committee" >Standards Committee</a><ul><li class="item-186"><a href="/agi-groups/standards-committee/the-importance-of-standards" >The Importance of Standards</a></li><li class="item-262"><a href="/agi-groups/standards-committee/standards-resources" >Standards Resources</a></li><li class="item-264 current active deeper parent"><a href="/agi-groups/standards-committee/uk-gemini" >UK GEMINI</a><ul><li class="item-363"><a href="/agi-groups/standards-committee/uk-gemini/agi-gemini-update" >AGI GEMINI Update</a></li></ul></li><li class="item-303"><a href="/agi-groups/standards-committee/bs7666-guidelines" >BS 7666 Guidelines</a></li><li class="item-305"><a href="/agi-groups/standards-committee/review-of-bs-7666" >Review of BS 7666</a></li><li class="item-357"><a href="/agi-groups/standards-committee/why-uk-gemini-why-not-just-have-the-inspire-technical-guidance" >Why UK GEMINI? Why not just have the INSPIRE Technical Guidance?</a></li></ul></li><li class="item-149 deeper parent"><a href="/agi-groups/action-working-groups" >Action Working Groups</a><ul><li class="item-188"><a href="/agi-groups/action-working-groups/events-awg" >Events AWG</a></li></ul></li></ul>
+		</div>
+		</div>
+
+	
+				</div>
+				
+							</div>
+			
+					</div>
+	</section>
+
+	
+		<section class="bottom">
+		<div class="container">
+			<div class="row">
+						<div class="module col-sm-4">
+		<div>
+							<ul class="nav menu">
+<li class="item-254 alias-parent-active"><a href="/agi-groups" >AGI Groups</a></li><li class="item-193"><a href="/resources" >Resources</a></li><li class="item-191"><a href="/privacy-policy" >Privacy Policy</a></li><li class="item-192"><a href="/terms-and-conditions" >Terms &amp; Conditions</a></li></ul>
+		</div>
+		</div>
+
+			<div class="module connect col-sm-4">
+		<div>
+							<h3>Connect</h3>
+							<div>
+	<a href="https://vimeo.com/geocommunity" class="vimeo" target="_blank"></a>
+	<a href="https://twitter.com/geocommunity" class="twitter" target="_blank"></a>
+	<a href="https://www.linkedin.com/groups/3744691/" class="linkedin" target="_blank"></a>
+</div>
+		</div>
+		</div>
+
+			<div class="module details col-sm-4 col-md-3 col-md-offset-1">
+		<div>
+							
+
+<div>
+	<p>Lancaster Court<br />8 Barnes Wallis Road<br />Fareham<br />Hampshire PO15 5TU</p>
+<p>Tel: +44 (<span style="font-size: 16px;">0)1489 668 340</span><br />Email: <a href="mailto:info@agi.org.uk">info@agi.org.uk</a></p></div>
+		</div>
+		</div>
+
+	
+			</div>
+		</div>
+	</section>
+		
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 wf">
+					Website by <a href="https://www.web-foundry.co.uk" target="_blank">Web Foundry</a>
+				</div>
+				<div class="col-sm-6 copy">
+					Copyright &copy; 2014 AGI. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="/templates/agi/js/bootstrap.min.js?v=1"></script>
+	<script type="text/javascript" src="/templates/agi/js/template.js?v=3"></script>
+
+	<script type="text/javascript">
+		(function($){
+		$(document).ready(function () {
+		$.cookieCuttr(
+		{
+    	cookieOverlayEnabled: false,
+    	cookieNotificationLocationBottom: false,
+      	cookieAnalytics: false,	
+		cookieCutter: true,
+		cookieMessage: 'We use cookies for the proper functioning of this website. Read our <a href="/privacy-policy">Privacy Policy</a>.  ',
+		cookiePolicyLink: '/privacy-policy',
+		cookieDeclineButton: true,
+		cookieDiscreetLink: false,
+		cookieDiscreetPosition: 'topright',
+        cookieAcceptButtonText: 'ACCEPT COOKIES',
+        cookieDeclineButtonText: 'DECLINE COOKIES',
+		cookieDisable: '#comments',
+		cookieDomain: 'index.php/cookies-policy',
+		cookieErrorMessage: 'This feature places cookies in your browser and has been disabled.To continue using this functionality, please ...',
+		});
+		});
+		})(jQuery);
+		</script>
+
+</body>
+</html>
