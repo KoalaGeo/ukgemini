@@ -20,8 +20,11 @@ jobs:
           hugo-version: '0.80.0'
           extended: true
 
-      - name: Build
+
+      - name: Test
         run: hugo version
+
+      - name: Build
         run: hugo
         
       - name: Deploy
