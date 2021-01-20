@@ -22,7 +22,7 @@ jobs:
 
 
       - name: Test
-        run: hugo version && npm install -g postcss-cli && npm install autoprefixer && npm audit fix
+        run: hugo version && sudo npm install -g postcss-cli && sudo  npm install autoprefixer && sudo npm audit fix
 
       - name: Build
         run: hugo
